@@ -7,12 +7,14 @@ import {
   addDecorator,
 } from "@storybook/react-native";
 import { withKnobs } from "@storybook/addon-knobs";
+import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
 
 import "./rn-addons";
 import { loadStories } from "./storyLoader";
 
 // enables knobs for all stories
 addDecorator(withKnobs);
+addDecorator(withBackgrounds);
 
 // import stories
 configure(() => {
